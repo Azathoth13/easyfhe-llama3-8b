@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=77,<82"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "odin-fhe-llama3"
+version = "0.1.0"
+description = "Odin feature-major CKKS runtime for encrypted Llama 3 8B inference"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "GPL-3.0-or-later" }
+dependencies = [
+    "setuptools<82",
+    "numpy>=2.2,<3",
+    "sympy>=1.13,<2",
+    "mpmath>=1.3",
+    "typing_extensions>=4.10",
+    "triton==3.2.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["llama3fhe", "llama3fhe.*"]

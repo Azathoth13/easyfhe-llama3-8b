@@ -1,0 +1,24 @@
+{
+  "comment": "Llama-3-8B persistent feature-major encrypted model configuration.",
+  "simulator": {
+    "logN": 16,
+    "maxLevelsRemaining": 37,
+    "level_budget": [
+      4,
+      4
+    ],
+    "dnum": 5,
+    "dcrtBits": 59,
+    "firstMod": 60,
+    "secretKeyDist": "SPARSE_TERNARY",
+    "rescaleTech": "FIXEDMANUAL",
+    "device": "cuda"
+  },
+  "qkv_linear": {
+    "input_level": 0,
+    "dtype": "float64"
+  },
+  "layout_transform": {
+    "dtype": "float64"
+  }
+}

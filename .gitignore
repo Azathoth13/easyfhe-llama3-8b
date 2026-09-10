@@ -1,0 +1,36 @@
+# Local environments and caches
+.venv/
+env_fhe/
+**/__pycache__/
+**/*.pyc
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.vscode/
+.idea/
+
+# Model weights and private checkpoints
+assets/weights/*
+!assets/weights/README.md
+*.safetensors
+*.pt
+*.bin
+*.npz
+*.gguf
+
+# Run reports and transient logs
+*.log
+*.out
+*.jsonl
+traces/
+reports/
+
+# Local EasyFHE builds and wheels
+scripts/third_party/
+*.whl
+
+# Secrets
+.env
+.env.*
+HF_Access.txt
