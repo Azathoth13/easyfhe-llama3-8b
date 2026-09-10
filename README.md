@@ -14,7 +14,7 @@ License: **GPLv3** — see [`LICENSE`](LICENSE). Third-party notices: [`NOTICE`]
 ## Quick start
 
 ```bash
-cd odin-fhe-llama3
+cd easyfhe-llama3-8b
 
 # EasyFHE: set EASYFHE_SOURCE_DIR or EASYFHE_WHEEL (see docs/SETUP.md)
 ./scripts/setup_env.sh
@@ -40,7 +40,7 @@ python run_model.py \
 ## Layout
 
 ```text
-odin-fhe-llama3/
+easyfhe-llama3-8b/
 ├── run_layer0.py / run_model.py
 ├── llama3fhe/                 # CKKS runtime
 ├── assets/
